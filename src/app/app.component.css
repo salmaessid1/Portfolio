@@ -31,10 +31,6 @@
     transition: background-color 0.3s ease;
 }
 
-.contact-button:hover {
-    background-color: #f3ec78;
-    color: #af4261;
-}
 /* Style pour la barre de navigation */
 .navbar {
     background-color: rgba(255, 255, 255, 0.9); /* Couleur de fond semi-transparente */
@@ -438,7 +434,6 @@
     animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite, colorChange 6s linear infinite, fadeInBlur 1.5s ease-out forwards;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Ajout d'une ombre portée */
 }
-
 /* Animation de saisie du texte */
 @keyframes typing {
     from {
@@ -480,111 +475,6 @@
         background-position: 100% 50%;
     }
 }
-
-/* Effet de survol (hover) pour le texte "Software Developer" */
-.dynamic-text:hover {
-    animation-play-state: paused; /* L'animation s'arrête quand on survole */
-    background-color: #af4261;; /* Jaune ajusté pour être harmonieux avec le dégradé */
-    text-shadow: 2px 2px 15px rgba(248, 180, 0, 0.8); /* Ombre portée améliorée */
-}
-
-
-
-
-.projects-mf {
-    padding: 100px 0; /* Espacement autour de la section */
-    background-color: #ffffff; /* Couleur de fond blanc */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre pour le conteneur */
-    border-radius: 15px; /* Coins arrondis */
-    transition: transform 0.5s ease; /* Transition douce */
-    max-width: 1100px; /* Largeur maximale pour aligner avec About */
-    margin: 0 auto; /* Centre la section */
-    margin: 40px auto; /* Centrer le formulaire avec une marge en haut */
-    padding-left: 40px; /* Espacement intérieur */
-    padding-right: 40px; /* Espacement intérieur */
-    padding-top: 100px;
-    padding-bottom: 50px;
-    margin-bottom: 100px;
-
-}
-
-.projects-mf:hover {
-    transform: scale(0.95); /* Réduction à 95% lors du survol */
-}
-
-.title-a {
-    color: #af4261; /* Couleur vibrante pour le titre */
-    text-transform: none;
-}
-
-.subtitle-a {
-    color: #333333; /* Couleur sombre pour le sous-titre */
-    margin-bottom: 40px;
-}
-
-.line-mf {
-    width: 100px;
-    height: 5px;
-    background-color: #af4261; /* Couleur pour la ligne de séparation */
-    margin: 0 auto 30px;
-}
-
-.project-box {
-    background-color: #ffffff; /* Fond des cartes de projets blanc */
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s; /* Animation au survol */
-    border: 1px solid #af4261; /* Bordure pour les cartes */
-    max-width: 400px; /* Largeur maximale pour les cartes */
-    margin: 5px auto; /* Centre les cartes */
-    
-}
-
-.project-box:hover {
-    transform: translateY(-10px); /* Effet de levage */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
-}
-
-.project-img img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s; /* Animation pour les images */
-}
-
-.project-img:hover img {
-    transform: scale(1.1); /* Zoom sur l'image au survol */
-}
-
-.project-content {
-    padding: 50px;
-    text-align: center;
-}
-
-.p-title {
-    font-size: 1.5rem;
-    color: #af4261; /* Couleur vibrante pour le titre du projet */
-    margin: 10px 0;
-}
-
-.p-description {
-    color: #333333; /* Couleur sombre pour la description */
-    margin-bottom: 20px;
-}
-
-.p-link {
-    display: inline-block;
-    background-color: #af4261; /* Couleur vibrante pour le lien */
-    color: #ffffff; /* Texte blanc pour le lien */
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s; /* Animation pour le lien */
-}
-
-.p-link:hover {
-    background-color: #f0f0f0; /* Changement de couleur au survol */
-    color: #af4261; /* Texte de couleur principale au survol */
-}
-
 
 /* Style général */
 body {
