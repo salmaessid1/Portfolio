@@ -1,0 +1,711 @@
+.lead {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #333;
+    background: linear-gradient(45deg, #f3ec78, #af4261); /* Dégradé de fond */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.lead strong {
+    font-weight: 600; /* Texte plus gras pour les parties importantes */
+}
+
+.lead br {
+    margin-bottom: 10px;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #af4261;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #f3ec78;
+    color: #af4261;
+}
+/* Style pour la barre de navigation */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9); /* Couleur de fond semi-transparente */
+    backdrop-filter: blur(10px); /* Effet de flou en arrière-plan */
+    transition: background-color 0.3s ease; /* Transition pour les changements de couleur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif; /* Changer la police si besoin */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #af4261; /* Couleur de la marque */
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #333; /* Couleur des liens */
+    margin: 0 15px; /* Espacement entre les éléments */
+    transition: color 0.3s; /* Transition pour les changements de couleur */
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+    color: #af4261; /* Couleur au survol et lorsque l'élément est actif */
+}
+
+.navbar-toggler {
+    border: none; /* Suppression de la bordure */
+}
+
+.navbar-toggler span {
+    background-color: #af4261; /* Couleur des barres du bouton */
+}
+/* Style pour l'introduction */
+
+/* Styles dynamiques pour le texte "Hi, I am Salma Essid" */
+.intro-title {
+    display: inline-block;
+    font-size: 4rem; /* Taille ajustée pour bien ressortir */
+    font-weight: bold; /* Mettre le texte en gras */
+    color: #fff; /* Couleur blanche pour le texte */
+    border-right: 3px solid rgba(255, 255, 255, 0.75); /* Curseur clignotant */
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typingTitle 4s steps(40, end), blink-caret 0.75s step-end infinite; /* Effets de saisie et de curseur */
+}
+
+
+.intro {
+    position: relative; /* Nécessaire pour le positionnement */
+    overflow: hidden; /* Empêche le débordement */
+}
+
+.intro::before {
+    content: ''; /* Crée un pseudo-élément */
+    position: absolute; /* Positionnement absolu */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets/devfolio-master/img/imgbackground.jpg'); /* Image de fond */
+    background-size: cover; /* Pour couvrir tout l'élément */
+    background-position: center; /* Centrer l'image */
+    transform: translateZ(0) translateY(0); /* Effet de parallaxe */
+    transition: transform 0.5s ease, filter 0.5s ease; /* Transition pour le mouvement et le filtre */
+    filter: blur(0); /* Pas de flou par défaut */
+}
+
+/* Appliquer un flou et un décalage lors du survol */
+.intro:hover::before {
+    transform: translateY(-10px); /* Déplacement vers le haut lors du survol */
+    filter: blur(5px); /* Flou de 5px au survol */
+    opacity: 0.8; /* Opacité réduite pour un effet de profondeur */
+}
+
+
+
+
+/* Animation de saisie pour "Hi, I am Salma Essid" */
+@keyframes typingTitle {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Animation du curseur clignotant */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgba(255, 255, 255, 0.75);
+    }
+}
+
+
+
+
+/* Style pour la section À propos */
+
+
+/* Style pour la section About */
+.about-mf {
+    padding: 60px 0; /* Espacement autour de la section */
+    transition: transform 0.5s ease; /* Transition douce */
+}
+
+.about-mf:hover {
+    transform: scale(0.95); /* Réduction à 95% lors du survol */
+}
+
+/* Reste de votre CSS pour la section "About" */
+
+
+.about-mf {
+    padding: 60px 0; /* Espacement autour de la section */
+}
+
+.box-shadow-full {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre pour le conteneur */
+    border-radius: 15px; /* Coins arrondis */
+    background: #fff; /* Fond blanc */
+}
+
+
+
+
+.about-img {
+    overflow: hidden; /* Cache tout débordement */
+    border-radius: 50%; /* Coins arrondis pour un style circulaire */
+    width: 150px; /* Largeur fixe */
+    height: 150px; /* Hauteur fixe */
+    position: relative; /* Positionnement relatif pour les effets */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre légère pour donner de la profondeur */
+    transition: box-shadow 0.3s ease; /* Transition pour l'ombre */
+}
+
+.about-img img {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    height: 100%; /* Prend toute la hauteur du conteneur */
+    object-fit: cover; /* Garde le ratio d'aspect de l'image */
+    transition: transform 0.6s ease, filter 0.6s ease; /* Transition douce pour l'effet zoom et flou */
+}
+
+.about-img:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Ombre plus marquée au survol */
+}
+
+.about-img:hover img {
+    transform: scale(1.1); /* Légère augmentation de la taille au survol */
+    filter: brightness(1.1); /* Augmentation de la luminosité de l'image */
+}
+
+
+
+
+
+
+.about-info {
+    font-size: 0.9rem; /* Réduit la taille de la police pour le texte des informations */
+    color: #555; /* Couleur du texte */
+    line-height:1.5;}
+
+.title-s {
+    font-weight: bold; /* Met le titre en gras */
+}
+
+.skill-mf {
+    margin-top: 30px; /* Espacement supérieur */
+}
+
+.progress {
+    height: 10px; /* Hauteur de la barre de progression */
+    border-radius: 5px; /* Coins arrondis pour la barre de progression */
+}
+
+.progress-bar {
+    background-color: #af4261; /* Couleur de la barre de progression */
+}
+
+.about-me {
+    margin-top: 40px; /* Espacement supérieur */
+}
+
+.lead {
+    font-size: 1rem; /* Taille de la police */
+    color: #555; /* Couleur du texte */
+    line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #af4261; /* Couleur du bouton */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transition douce pour le bouton */
+}
+
+.contact-button:hover {
+    background-color: #f3ec78; /* Couleur du bouton au survol */
+    color: #af4261; /* Couleur du texte au survol */
+}
+
+
+
+
+
+/* Style pour la section À propos */
+.about-mf {
+    padding-left: 40px; /* Espacement intérieur */
+    padding-right: 40px; /* Espacement intérieur */
+    padding-top: 100px;
+    padding-bottom: 50px;}
+
+.about-img {
+    margin-bottom: 20px; /* Espacement inférieur */
+    text-align: center; /* Centrer l'image */
+}
+
+.title-s {
+    font-weight: bold; /* Met le titre en gras */
+    color: #af4261; /* Couleur personnalisée pour le titre */
+}
+
+.skill-mf {
+    margin-top: 30px; /* Espacement supérieur */
+}
+
+.skill-item {
+    margin-bottom: 15px; /* Espacement entre les compétences */
+}
+
+.progress {
+    height: 10px; /* Hauteur de la barre de progression */
+    border-radius: 5px; /* Coins arrondis pour la barre de progression */
+    background-color: #f2f2f2; /* Couleur de fond pour la barre de progression */
+}
+
+.progress-bar {
+    background-color: #af4261; /* Couleur de la barre de progression */
+}
+
+/* Ajout de styles pour les titres */
+.title-s, .title-s {
+    font-size: 1.2rem; /* Taille de la police pour les titres */
+}
+
+/* Ajout de styles pour le texte normal */
+.about-info p {
+    font-size: 1rem; /* Taille de la police pour le texte */
+    color: #555; /* Couleur du texte */
+    line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
+}
+
+
+
+/* Style pour la section À propos */
+.about-me {
+    padding: 30px; /* Ajoute un espacement autour de la section */
+    background-color: #f8f9fa; /* Couleur de fond claire */
+    border-radius: 10px; /* Coins arrondis pour une apparence douce */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour donner de la profondeur */
+}
+
+.title-left {
+    font-size: 1.4rem; /* Taille réduite pour le titre */
+    color: #af4261; /* Couleur personnalisée pour le titre */
+    margin-bottom: 20px; /* Espacement inférieur */
+    font-weight: bold;
+}
+
+
+.about-info p span {
+    font-size: 1.1rem; /* Réduit la taille de la police pour les informations spécifiques */
+}
+
+
+.about-description {
+    font-size: 1.1rem; /* Taille de la police pour le texte */
+    color: #333; /* Couleur du texte */
+    line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
+    margin-bottom: 20px; /* Espacement inférieur */
+}
+
+.contact-button-container {
+    text-align: center; /* Centre le bouton de contact */
+}
+
+.contact-button {
+    display: inline-block; /* Rend le lien comme un bouton */
+    padding: 10px 20px; /* Ajoute du remplissage au bouton */
+    font-size: 1rem; /* Taille de la police pour le bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    background-color: #af4261; /* Couleur de fond du bouton */
+    border-radius: 5px; /* Coins arrondis pour le bouton */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+.contact-button:hover {
+    background-color: #d06b8a; /* Couleur de fond lors du survol */
+}
+
+
+
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px; /* Espacement supérieur */
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease; /* Transition pour le mouvement et la couleur */
+}
+
+.skill-icon {
+    width: 48px; /* Largeur fixe pour les icônes */
+    height: 48px; /* Hauteur fixe pour les icônes */
+    margin-bottom: 10px; /* Espacement inférieur */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition pour le zoom et l'effet de flou */
+}
+
+.skill-item:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    color: #af4261; /* Changement de couleur du texte au survol */
+}
+
+.skill-item:hover .skill-icon {
+    transform: scale(1.2); /* Zoom sur l'icône au survol */
+    filter: brightness(1.2); /* Augmentation de la luminosité de l'icône au survol */
+}
+
+
+
+
+.shrink {
+    transform: scale(0.8); /* Réduire à 80% de la taille */
+    opacity: 0.7; /* Rendre légèrement transparent */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transition douce pour l'animation */
+}
+
+
+/* Styles pour le footer */
+.footer {
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #333;
+}
+
+.footer .copyright-box {
+    margin: 0;
+}
+
+.footer p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer .credits {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* Styles dynamiques pour le texte "Software Developer" */
+.dynamic-text {
+    display: inline-block;
+    font-size: 3rem; /* Taille du texte */
+    font-weight: bold; /* Met le texte en gras */
+    border-right: 4px solid rgba(255, 255, 255, 0.75); /* Curseur clignotant */
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #ff8a00, #e52e71, #9b00e8, #ff8a00); /* Dégradé de couleur */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; /* Rend le texte transparent pour voir le dégradé */
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite, colorChange 6s linear infinite, fadeInBlur 1.5s ease-out forwards;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Ajout d'une ombre portée */
+}
+
+/* Animation de saisie du texte */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Effet de flou au début de l'animation */
+@keyframes fadeInBlur {
+    0% {
+        filter: blur(10px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+/* Animation du curseur clignotant */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgba(255, 255, 255, 0.75);
+    }
+}
+
+/* Animation de changement de couleur progressif */
+@keyframes colorChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Effet de survol (hover) pour le texte "Software Developer" */
+.dynamic-text:hover {
+    animation-play-state: paused; /* L'animation s'arrête quand on survole */
+    background-color: #af4261;; /* Jaune ajusté pour être harmonieux avec le dégradé */
+    text-shadow: 2px 2px 15px rgba(248, 180, 0, 0.8); /* Ombre portée améliorée */
+}
+
+
+
+
+.projects-mf {
+    padding: 100px 0; /* Espacement autour de la section */
+    background-color: #ffffff; /* Couleur de fond blanc */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre pour le conteneur */
+    border-radius: 15px; /* Coins arrondis */
+    transition: transform 0.5s ease; /* Transition douce */
+    max-width: 1100px; /* Largeur maximale pour aligner avec About */
+    margin: 0 auto; /* Centre la section */
+    margin: 40px auto; /* Centrer le formulaire avec une marge en haut */
+    padding-left: 40px; /* Espacement intérieur */
+    padding-right: 40px; /* Espacement intérieur */
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+
+}
+
+.projects-mf:hover {
+    transform: scale(0.95); /* Réduction à 95% lors du survol */
+}
+
+.title-a {
+    color: #af4261; /* Couleur vibrante pour le titre */
+    text-transform: none;
+}
+
+.subtitle-a {
+    color: #333333; /* Couleur sombre pour le sous-titre */
+    margin-bottom: 40px;
+}
+
+.line-mf {
+    width: 100px;
+    height: 5px;
+    background-color: #af4261; /* Couleur pour la ligne de séparation */
+    margin: 0 auto 30px;
+}
+
+.project-box {
+    background-color: #ffffff; /* Fond des cartes de projets blanc */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation au survol */
+    border: 1px solid #af4261; /* Bordure pour les cartes */
+    max-width: 400px; /* Largeur maximale pour les cartes */
+    margin: 5px auto; /* Centre les cartes */
+    
+}
+
+.project-box:hover {
+    transform: translateY(-10px); /* Effet de levage */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+}
+
+.project-img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s; /* Animation pour les images */
+}
+
+.project-img:hover img {
+    transform: scale(1.1); /* Zoom sur l'image au survol */
+}
+
+.project-content {
+    padding: 50px;
+    text-align: center;
+}
+
+.p-title {
+    font-size: 1.5rem;
+    color: #af4261; /* Couleur vibrante pour le titre du projet */
+    margin: 10px 0;
+}
+
+.p-description {
+    color: #333333; /* Couleur sombre pour la description */
+    margin-bottom: 20px;
+}
+
+.p-link {
+    display: inline-block;
+    background-color: #af4261; /* Couleur vibrante pour le lien */
+    color: #ffffff; /* Texte blanc pour le lien */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Animation pour le lien */
+}
+
+.p-link:hover {
+    background-color: #f0f0f0; /* Changement de couleur au survol */
+    color: #af4261; /* Texte de couleur principale au survol */
+}
+
+
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif; /* Choix de la police pour le corps */
+    background-color: #f7f7f7; /* Couleur de fond claire */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Hauteur minimale pour centrer le contenu */
+}
+
+/* Conteneur du formulaire de contact */
+.contact-form {
+    max-width: 1100px; /* Largeur maximale du formulaire */
+    width: 90%; /* Largeur flexible */
+    margin: 40px auto; /* Centrer le formulaire avec une marge en haut */
+    padding-left: 40px; /* Espacement intérieur */
+    padding-right: 40px; /* Espacement intérieur */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ffffff; /* Fond blanc pour le formulaire */
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour l'animation */
+}
+
+.contact-form:hover {
+    transform: scale(0.97); /* Réduction lors du survol */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+}
+
+/* Ligne séparatrice sous le titre */
+.line-mf {
+    width: 100px;
+    height: 5px;
+    background-color: #af4261; /* Couleur pour la ligne de séparation */
+    margin: 0 auto 30px;
+}
+
+/* Style du titre avec la ligne soulignée */
+.form-title {
+    text-align: center; /* Centrer le titre */
+    color: #af4261; /* Couleur du titre */
+    margin-bottom: 20px; /* Espacement inférieur */
+    font-size: 2.2rem; /* Taille de la police */
+    font-weight: bold; /* Met le titre en gras */
+    position: relative; /* Nécessaire pour positionner la ligne */
+}
+
+.form-title::after {
+    content: ''; /* Crée la ligne sous le titre */
+    display: block; /* Assure que la ligne est affichée en bloc */
+    width: 80px; /* Longueur de la ligne */
+    height: 4px; /* Épaisseur de la ligne */
+    background-color: #af4261; /* Couleur de la ligne */
+    margin: 10px auto 0; /* Centrer la ligne et espacement avec le titre */
+    border-radius: 2px; /* Coins arrondis pour un effet plus doux */
+}
+
+/* Style des étiquettes */
+label {
+    display: block; /* Étiquette sur une nouvelle ligne */
+    margin-bottom: 8px; /* Espacement inférieur */
+    font-weight: bold; /* Texte en gras */
+    color: #333; /* Couleur sombre */
+}
+
+/* Champs de saisie */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Prend toute la largeur disponible */
+    padding: 12px; /* Espacement intérieur */
+    border: 1px solid #ddd; /* Bordure légère */
+    border-radius: 8px; /* Coins arrondis */
+    font-size: 1rem; /* Taille de la police */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition douce */
+    margin-bottom: 20px; /* Espacement entre les champs */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #af4261; /* Couleur de la bordure au focus */
+    outline: none; /* Retire le contour par défaut */
+    box-shadow: 0 0 8px rgba(175, 66, 97, 0.4); /* Ombre au focus */
+}
+
+/* Conteneur du bouton */
+.btn-container {
+    text-align: center; /* Centrer le bouton */
+    margin-top: 20px; /* Espacement supérieur pour le bouton */
+}
+
+/* Style du bouton */
+.btn-submit {
+    width: 180px; /* Largeur fixe du bouton */
+    padding: 12px; /* Espacement intérieur */
+    background-color: #af4261; /* Couleur du bouton */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 8px; /* Coins arrondis */
+    font-size: 16px; /* Taille du texte */
+    cursor: pointer; /* Pointeur au survol */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition pour le bouton */
+}
+
+.btn-submit:hover {
+    background-color: #d06b8a; /* Couleur au survol */
+    transform: translateY(-3px); /* Légère élévation au survol */
+}
+
+/* Réactivité pour petits écrans */
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 20px; /* Réduire le remplissage sur petits écrans */
+    }
+
+    .form-title {
+        font-size: 1.8rem; /* Taille réduite du titre sur petits écrans */
+    }
+}

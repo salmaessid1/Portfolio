@@ -25,9 +25,29 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/devfolio-master/lib/bootstrap/css/bootstrap.min.css",
+              "src/assets/devfolio-master/lib/font-awesome/css/font-awesome.min.css",
+              "src/assets/devfolio-master/lib/animate/animate.min.css",
+              "src/assets/devfolio-master/lib/ionicons/css/ionicons.min.css",
+              "src/assets/devfolio-master/lib/owlcarousel/assets/owl.carousel.min.css",
+              "src/assets/devfolio-master/css/style.css",
+              "src/assets/devfolio-master/lib/lightbox/css/lightbox.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/devfolio-master/lib/jquery/jquery.min.js",
+              "src/assets/devfolio-master/lib/jquery/jquery-migrate.min.js",
+              "src/assets/devfolio-master/lib/popper/popper.min.js",
+              "src/assets/devfolio-master/lib/bootstrap/js/bootstrap.min.js",
+              "src/assets/devfolio-master/lib/easing/easing.min.js",
+              "src/assets/devfolio-master/lib/counterup/jquery.waypoints.min.js",
+              "src/assets/devfolio-master/lib/counterup/jquery.counterup.js",
+              "src/assets/devfolio-master/lib/owlcarousel/owl.carousel.min.js",
+              "src/assets/devfolio-master/lib/lightbox/js/lightbox.min.js",
+              "src/assets/devfolio-master/lib/typed/typed.min.js",
+              "src/assets/devfolio-master/contactform/contactform.js",
+              "src/assets/devfolio-master/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,5 +114,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a97af3ce-b5a9-4a4c-bd7d-6e514e5014c4"
   }
 }
